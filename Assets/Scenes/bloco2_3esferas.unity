@@ -545,8 +545,8 @@ MonoBehaviour:
   relativeForceVector: {x: 0, y: 0, z: 0}
   accelerationVector1: {x: 0, y: 0, z: 0}
   accelerationVector2: {x: 0, y: 0, z: 0}
-  velocityVector1: {x: 1, y: 0, z: 0}
-  velocityVector2: {x: -1, y: 0, z: 0}
+  velocityVector1: {x: 0, y: 0, z: 0}
+  velocityVector2: {x: 0, y: 0, z: 0}
   diferenca: {x: 0, y: 0, z: 0}
   tamanhoMola: {x: 5, y: 0, z: 0}
   constanteElastica: 5
@@ -570,7 +570,7 @@ MonoBehaviour:
   accelerationVector1: {x: 0, y: 0, z: 0}
   accelerationVector2: {x: 0, y: 0, z: 0}
   velocityVector1: {x: -1, y: 0, z: 0}
-  velocityVector2: {x: 1, y: 0, z: 0}
+  velocityVector2: {x: 0, y: 0, z: 0}
   diferenca: {x: 0, y: 0, z: 0}
   tamanhoMola: {x: 5, y: 0, z: 0}
   constanteElastica: 5
