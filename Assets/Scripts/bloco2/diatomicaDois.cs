@@ -10,10 +10,10 @@ public class diatomicaDois : MonoBehaviour
     public Vector3 accelerationVector1, accelerationVector2;
     public Vector3 velocityVector1, velocityVector2;
     public Vector3 diferenca;
-    public Vector3 tamanhoMola = new Vector3(10.0f, 0.0f, 0.0f);
+    public Vector3 tamanhoMola = new Vector3(5.0f, 0.0f, 0.0f);
     public float constanteElastica = 5;
     public float massa1 = 10;
-    public float massa2 = 20;
+    public float massa2 = 10;
  
     // Update is called once per frame
     void FixedUpdate()
@@ -26,7 +26,7 @@ public class diatomicaDois : MonoBehaviour
     {
         Vector3 zeroVector = new Vector3(0.0f, 0.0f, 0.0f);
         diferenca = esfera1.transform.position - esfera2.transform.position;
-        if (diferenca.x < zeroVector.x || diferenca.y < zeroVector.y || diferenca.z < zeroVector.z) {
+        if (diferenca.x < zeroVector.x) {
             diferenca = new Vector3(-diferenca.x, -diferenca.y, -diferenca.z);
         }
         relativeForceVector = -constanteElastica * (diferenca - tamanhoMola);
@@ -54,6 +54,6 @@ public class diatomicaDois : MonoBehaviour
     void Posicao()
     {
         esfera1.transform.position += velocityVector1 * Time.deltaTime;
-        esfera2.transform.position += (velocityVector1 * 2) * Time.deltaTime;
+        esfera2.transform.position += velocityVector2 * Time.deltaTime;
     }
 }
