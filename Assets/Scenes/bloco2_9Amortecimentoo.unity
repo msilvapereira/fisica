@@ -783,14 +783,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 931031929}
-  - component: {fileID: 931031930}
-  - component: {fileID: 931031931}
-  - component: {fileID: 931031933}
-  - component: {fileID: 931031932}
-  - component: {fileID: 931031937}
   - component: {fileID: 931031936}
   - component: {fileID: 931031935}
   - component: {fileID: 931031934}
+  - component: {fileID: 931031933}
+  - component: {fileID: 931031932}
+  - component: {fileID: 931031931}
+  - component: {fileID: 931031930}
+  - component: {fileID: 931031928}
   m_Layer: 0
   m_Name: EventManager
   m_TagString: Untagged
@@ -798,6 +798,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &931031928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931031927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3dfe33cdbc0d7842b72c60512d0e965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  esfera1: {fileID: 748216940}
+  esfera2: {fileID: 1033964536}
+  relativeForceVector: {x: 0, y: 0, z: 0}
+  accelerationVector1: {x: 0, y: 0, z: 0}
+  accelerationVector2: {x: 0, y: 0, z: 0}
+  velocityVector1: {x: 0, y: 0, z: 0}
+  velocityVector2: {x: 0, y: 0, z: 0}
+  diferenca: {x: 0, y: 0, z: 0}
+  tamanhoMola: {x: 2, y: 0, z: 0}
+  constanteElastica: 2
+  massa1: 10
+  massa2: 10
+  resistencia: 2
 --- !u!4 &931031929
 Transform:
   m_ObjectHideFlags: 0
@@ -821,127 +846,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 931031927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e1343c946aa95e44b42d9410f137c61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  esfera1: {fileID: 1763909345}
-  esfera2: {fileID: 704373961}
-  relativeForceVector: {x: 0, y: 0, z: 0}
-  accelerationVector1: {x: 0, y: 0, z: 0}
-  accelerationVector2: {x: 0, y: 0, z: 0}
-  velocityVector1: {x: 0, y: 0, z: 0}
-  velocityVector2: {x: 0, y: 0, z: 0}
-  diferenca: {x: 0, y: 0, z: 0}
-  tamanhoMola: {x: 2, y: 0, z: 0}
-  constanteElastica: 2
-  massa1: 10
-  massa2: 10
---- !u!114 &931031931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931031927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e1343c946aa95e44b42d9410f137c61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  esfera1: {fileID: 704373961}
-  esfera2: {fileID: 893789916}
-  relativeForceVector: {x: 0, y: 0, z: 0}
-  accelerationVector1: {x: 0, y: 0, z: 0}
-  accelerationVector2: {x: 0, y: 0, z: 0}
-  velocityVector1: {x: 0, y: 0, z: 0}
-  velocityVector2: {x: 0, y: 0, z: 0}
-  diferenca: {x: 0, y: 0, z: 0}
-  tamanhoMola: {x: 2, y: 0, z: 0}
-  constanteElastica: 2
-  massa1: 10
-  massa2: 10
---- !u!114 &931031932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931031927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e1343c946aa95e44b42d9410f137c61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  esfera1: {fileID: 566085593}
-  esfera2: {fileID: 1256048492}
-  relativeForceVector: {x: 0, y: 0, z: 0}
-  accelerationVector1: {x: 0, y: 0, z: 0}
-  accelerationVector2: {x: 0, y: 0, z: 0}
-  velocityVector1: {x: 0, y: 0, z: 0}
-  velocityVector2: {x: 0, y: 0, z: 0}
-  diferenca: {x: 0, y: 0, z: 0}
-  tamanhoMola: {x: 2, y: 0, z: 0}
-  constanteElastica: 2
-  massa1: 10
-  massa2: 10
---- !u!114 &931031933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931031927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e1343c946aa95e44b42d9410f137c61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  esfera1: {fileID: 893789916}
-  esfera2: {fileID: 566085593}
-  relativeForceVector: {x: 0, y: 0, z: 0}
-  accelerationVector1: {x: 0, y: 0, z: 0}
-  accelerationVector2: {x: 0, y: 0, z: 0}
-  velocityVector1: {x: 0, y: 0, z: 0}
-  velocityVector2: {x: 0, y: 0, z: 0}
-  diferenca: {x: 0, y: 0, z: 0}
-  tamanhoMola: {x: 2, y: 0, z: 0}
-  constanteElastica: 2
-  massa1: 10
-  massa2: 10
---- !u!114 &931031934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931031927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e1343c946aa95e44b42d9410f137c61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  esfera1: {fileID: 748216940}
-  esfera2: {fileID: 1033964536}
-  relativeForceVector: {x: 0, y: 0, z: 0}
-  accelerationVector1: {x: 0, y: 0, z: 0}
-  accelerationVector2: {x: 0, y: 0, z: 0}
-  velocityVector1: {x: 0, y: 0, z: 0}
-  velocityVector2: {x: 0, y: 0, z: 0}
-  diferenca: {x: 0, y: 0, z: 0}
-  tamanhoMola: {x: 2, y: 0, z: 0}
-  constanteElastica: 2
-  massa1: 10
-  massa2: 10
---- !u!114 &931031935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 931031927}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e1343c946aa95e44b42d9410f137c61, type: 3}
+  m_Script: {fileID: 11500000, guid: c3dfe33cdbc0d7842b72c60512d0e965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   esfera1: {fileID: 588384282}
@@ -956,7 +861,8 @@ MonoBehaviour:
   constanteElastica: 2
   massa1: 10
   massa2: 10
---- !u!114 &931031936
+  resistencia: 2
+--- !u!114 &931031931
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -965,7 +871,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 931031927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e1343c946aa95e44b42d9410f137c61, type: 3}
+  m_Script: {fileID: 11500000, guid: c3dfe33cdbc0d7842b72c60512d0e965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   esfera1: {fileID: 2140597677}
@@ -980,7 +886,8 @@ MonoBehaviour:
   constanteElastica: 2
   massa1: 10
   massa2: 10
---- !u!114 &931031937
+  resistencia: 2
+--- !u!114 &931031932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -989,7 +896,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 931031927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e1343c946aa95e44b42d9410f137c61, type: 3}
+  m_Script: {fileID: 11500000, guid: c3dfe33cdbc0d7842b72c60512d0e965, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   esfera1: {fileID: 1256048492}
@@ -1004,6 +911,107 @@ MonoBehaviour:
   constanteElastica: 2
   massa1: 10
   massa2: 10
+  resistencia: 2
+--- !u!114 &931031933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931031927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3dfe33cdbc0d7842b72c60512d0e965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  esfera1: {fileID: 566085593}
+  esfera2: {fileID: 1256048492}
+  relativeForceVector: {x: 0, y: 0, z: 0}
+  accelerationVector1: {x: 0, y: 0, z: 0}
+  accelerationVector2: {x: 0, y: 0, z: 0}
+  velocityVector1: {x: 0, y: 0, z: 0}
+  velocityVector2: {x: 0, y: 0, z: 0}
+  diferenca: {x: 0, y: 0, z: 0}
+  tamanhoMola: {x: 2, y: 0, z: 0}
+  constanteElastica: 2
+  massa1: 10
+  massa2: 10
+  resistencia: 2
+--- !u!114 &931031934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931031927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3dfe33cdbc0d7842b72c60512d0e965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  esfera1: {fileID: 893789916}
+  esfera2: {fileID: 566085593}
+  relativeForceVector: {x: 0, y: 0, z: 0}
+  accelerationVector1: {x: 0, y: 0, z: 0}
+  accelerationVector2: {x: 0, y: 0, z: 0}
+  velocityVector1: {x: 0, y: 0, z: 0}
+  velocityVector2: {x: 0, y: 0, z: 0}
+  diferenca: {x: 0, y: 0, z: 0}
+  tamanhoMola: {x: 2, y: 0, z: 0}
+  constanteElastica: 2
+  massa1: 10
+  massa2: 10
+  resistencia: 2
+--- !u!114 &931031935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931031927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3dfe33cdbc0d7842b72c60512d0e965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  esfera1: {fileID: 704373961}
+  esfera2: {fileID: 893789916}
+  relativeForceVector: {x: 0, y: 0, z: 0}
+  accelerationVector1: {x: 0, y: 0, z: 0}
+  accelerationVector2: {x: 0, y: 0, z: 0}
+  velocityVector1: {x: 0, y: 0, z: 0}
+  velocityVector2: {x: 0, y: 0, z: 0}
+  diferenca: {x: 0, y: 0, z: 0}
+  tamanhoMola: {x: 2, y: 0, z: 0}
+  constanteElastica: 2
+  massa1: 10
+  massa2: 10
+  resistencia: 2
+--- !u!114 &931031936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931031927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3dfe33cdbc0d7842b72c60512d0e965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  esfera1: {fileID: 1763909345}
+  esfera2: {fileID: 704373961}
+  relativeForceVector: {x: 0, y: 0, z: 0}
+  accelerationVector1: {x: 0, y: 0, z: 0}
+  accelerationVector2: {x: 0, y: 0, z: 0}
+  velocityVector1: {x: 0, y: 0, z: 0}
+  velocityVector2: {x: 0, y: 0, z: 0}
+  diferenca: {x: 0, y: 0, z: 0}
+  tamanhoMola: {x: 2, y: 0, z: 0}
+  constanteElastica: 2
+  massa1: 10
+  massa2: 10
+  resistencia: 2
 --- !u!1 &1033964536
 GameObject:
   m_ObjectHideFlags: 0
