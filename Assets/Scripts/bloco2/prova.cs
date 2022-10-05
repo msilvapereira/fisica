@@ -7,7 +7,6 @@ public class prova : MonoBehaviour
     public Vector3 aceleracao;
     public Vector3 velocidade;
     public Vector3 forca;
-    public Vector3 diferenca;
     public Vector3 tamanhoMola = new Vector3(2.0f, 2.0f, 2.0f);
     public float k;
     public float b;
