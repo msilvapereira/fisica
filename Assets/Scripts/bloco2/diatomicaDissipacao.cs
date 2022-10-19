@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
  
-public class diatomicaDois : MonoBehaviour
+public class diatomicaDissipacao : MonoBehaviour
 {
     public GameObject esfera1;
     public GameObject esfera2;
@@ -14,6 +14,7 @@ public class diatomicaDois : MonoBehaviour
     public float constanteElastica = 5;
     public float massa1 = 10;
     public float massa2 = 10;
+    public float resistencia = 2;
  
     // Update is called once per frame
     void FixedUpdate()
@@ -29,7 +30,7 @@ public class diatomicaDois : MonoBehaviour
         if (diferenca.x < zeroVector.x) {
             diferenca = new Vector3(-diferenca.x, -diferenca.y, -diferenca.z);
         }
-        relativeForceVector = -constanteElastica * (diferenca - tamanhoMola);
+        relativeForceVector = (-constanteElastica * (diferenca - tamanhoMola)) + (-resistencia * (velocityVector2 - velocityVector1));
     }
  
     void Aceleracao()
